@@ -5,11 +5,11 @@ public class BoardDTO {
     private Long id;
     private String title;
     private String content;
-    private String writer;
+    private MemberDTO writer;
 
     public BoardDTO() {}
 
-    public BoardDTO(Long id, String title, String content, String writer) {
+    public BoardDTO(Long id, String title, String content, MemberDTO writer) {
         this.id = id;
         this.title = title;
         this.content = content;
@@ -40,11 +40,11 @@ public class BoardDTO {
         this.content = content;
     }
 
-    public String getWriter() {
+    public MemberDTO getWriter() {
         return writer;
     }
 
-    public void setWriter(String writer) {
+    public void setWriter(MemberDTO writer) {
         this.writer = writer;
     }
 
